@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+#blok {
+
+
+border: 1mm black solid;
+background-color: grey;
+width: 113px;
+height: 182px;
+}
+input[ type="button"]{
+text-align: center;
+width: 25px;
+height: 30px;
+color: black;
+
+}
+#wys{
+border: 1px black solid;
+width: 110px;
+height: 30px;
+background-color: lightslategray;
+}
+
+
+#cle{
+width: 54px;
+height: 30px;
+text-align: center;
+
+
+
+}
+#rr {
+    width: 83px;
+
+
+}
+    </style>
+
+<script>
+var liczba1 = "";
+var liczbaa2 ="";
+var wynik = 0;
+var znak ="";
+
+
+function plus()
+{
+znak = "+";
+document.getElementById("wys").innerHTML = "0";
+console.log(znak);
+}
+function minus()
+{
+znak = "-";
+document.getElementById("wys").innerHTML = "0";
+
+}
+function razy()
+{
+znak = "*";
+document.getElementById("wys").innerHTML = "0";
+
+}
+function dziel()
+{
+znak = "/";
+document.getElementById("wys").innerHTML = "0";
+
+}
+
+
+function x1()
+{
+if(znak=="")
+{
+liczba1 = liczba1 + "1";
+document.getElementById("wys").innerHTML = liczba1;
+}
+else
+{
+
+    liczbaa2 = liczbaa2 + "1";
+ 
+    document.getElementById("wys").innerHTML = liczbaa2;
+}
+
+
+}
+
+function x2()
+{
+
+    if(znak=="")
+{
+liczba1 = liczba1 + "2";
+document.getElementById("wys").innerHTML = liczba1;
+}
+else
+{
+
+    liczbaa2 = liczbaa2 + "2";
+ 
+    document.getElementById("wys").innerHTML = liczbaa2;
+}
+
+}
+
+function x3()
+{
+
+    if(znak=="")
+{
+liczba1 = liczba1 + "3";
+document.getElementById("wys").innerHTML = liczba1;
+}
+else
+{
+
+    liczbaa2 = liczbaa2 + "3";
+  
+    document.getElementById("wys").innerHTML = liczbaa2;
+}
+
+}
+
+function x4()
+{
+
+    if(znak=="")
+{
+liczba1 = liczba1 + "4";
+document.getElementById("wys").innerHTML = liczba1;
+}
+else
+{
+
+    liczbaa2 = liczbaa2 + "4";
+    
+    document.getElementById("wys").innerHTML = liczbaa2;
+}
+
+}
+
+function x5()
+{
+
+    if(znak=="")
+{
+liczba1 = liczba1 + "5";
+document.getElementById("wys").innerHTML = liczba1;
+}
+else
+{
+
+    liczbaa2 = liczbaa2 + "5";
+    document.getElementById("wys").innerHTML = liczbaa2;
+}
+
+}
+
+function x6()
+{
+
+    if(znak=="")
+{
+liczba1 = liczba1 + "6";
+document.getElementById("wys").innerHTML = liczba1;
+}
+else
+{
+
+    liczbaa2 = liczbaa2 + "6";
+    document.getElementById("wys").innerHTML = liczbaa2;
+}
+
+}
+
+function x7()
+{
+
+    if(znak=="")
+{
+liczba1 = liczba1 + "7";
+document.getElementById("wys").innerHTML = liczba1;
+}
+else
+{
+
+    liczbaa2 = liczbaa2 + "7";
+    document.getElementById("wys").innerHTML = liczbaa2;
+}
+
+}
+
+function x8()
+{
+
+    if(znak=="")
+{
+liczba1 = liczba1 + "8";
+document.getElementById("wys").innerHTML = liczba1;
+}
+else
+{
+
+    liczbaa2 = liczbaa2 + "8";
+    document.getElementById("wys").innerHTML = liczbaa2;
+}
+
+}
+
+function x9()
+{
+
+    if(znak=="")
+{
+liczba1 = liczba1 + "9";
+document.getElementById("wys").innerHTML = liczba1;
+}
+else
+{
+
+    liczbaa2 = liczbaa2 + "9";
+    document.getElementById("wys").innerHTML = liczbaa2;
+}
+
+}
+
+function x0()
+{
+
+    if(znak=="")
+{
+liczba1 = liczba1 + "0";
+document.getElementById("wys").innerHTML = liczba1;
+}
+else
+{
+
+    liczbaa2 = liczbaa2 + "0";
+    document.getElementById("wys").innerHTML = liczbaa2;
+}
+
+}
+
+function przc()
+{
+if(znak=="")
+{
+liczba1 = liczba1 + ".";
+}
+else
+liczbaa2 = liczbaa2 + ".";
+
+
+}
+
+function usun() 
+{
+
+liczba1 = "";
+liczbaa2 = "";
+wynik = 0;
+znak = "";
+document.getElementById("wys").innerHTML = "0";
+
+}
+function wynikk()
+{
+if(znak == "+")
+{
+
+wynik = 1*liczba1 + 1*liczbaa2;
+
+}
+if(znak == "-")
+{
+
+wynik = liczba1 - liczbaa2;
+
+}
+if(znak =="*")
+{
+
+wynik = liczba1 * liczbaa2;
+
+}
+if(znak == "/")
+{
+
+wynik = liczba1 / liczbaa2;
+
+}
+if(znak=="")
+{
+
+wynik = liczba1;
+
+}
+
+
+
+
+document.getElementById("wys").innerHTML =  wynik;
+
+
+
+
+
+}
+
+
+
+</script>
+
+</head>
+<body>
+  
+<div id="blok">
+
+<div id="wys">0</div>
+
+<form id="liczby">
+<input type="button" id="cle" name="cle" value="C" onclick="usun()">
+<input type="button" id="jeden" name="1" value="1" onclick="x1()">
+<input type="button" id="dwa" name="2" value="2" onclick="x2()" >
+<input type="button" id="trzy" name="3" value="3" onclick="x3()" >
+<input type="button" id="cztery" name="4" value="4" onclick="x4()" >
+<input type="button" id="piec" name="5" value="5" onclick="x5()" >
+<input type="button" id="szesc" name="6" value="6"  onclick="x6()">
+<input type="button" id="siedem" name="7" value="7" onclick="x7()" >
+<input type="button" id="osiem" name="8" value="8" onclick="x8()" >
+<input type="button" id="dziewiec" name="9" value="9" onclick="x9()" >
+<input type="button" id="zero" name="0" value="0" onclick="x0()" >
+<input type="button" id="*" name="*" value="x"  onclick="razy()" >
+<input type="button" id="/" name="/" value="÷"  onclick="dziel()">
+<input type="button" id="-" name="-" value="-"  onclick="minus()">
+<input type="button" id="+" name="+" value="+"  onclick="plus()" >
+<input type="button" id="," name="," value="."  onclick="przc()">
+<input type="button" id="rr" name="=" value="=" onclick="wynikk()">
+
+
+</form>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>     
